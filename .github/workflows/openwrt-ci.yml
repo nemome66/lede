@@ -49,10 +49,10 @@ jobs:
           ./scripts/feeds update -a
           ./scripts/feeds install -a
       - name: Generate configuration file
-          run: |
-          rm -f ./.config*
-          touch ./.config
-          cat >> .config <<EOF
+        run: |
+        rm -f ./.config*
+        touch ./.config
+        cat >> .config <<EOF
           #
           # ========================固件定制部分========================
           #
